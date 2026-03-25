@@ -4,12 +4,12 @@
       </h1>
       <nav id="colorlib-main-menu" role="navigation">
           <ul>
-              <li class="colorlib-active"><a href="index.html">Home</a></li>
-              <li><a href="collection.html">Collection</a></li>
-              <li><a href="about.html">About Me</a></li>
-              <li><a href="services.html">My Services</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li class="colorlib-@yield("home-activation")"><a href="{{ route("front.index") }}">Home</a></li>
+              <li class="colorlib-@yield("collection-activation")"><a href="{{ route("front.collection") }}">Collection</a></li>
+              <li class="colorlib-@yield("about-activation")"><a href="{{ route("front.about") }}">About Me</a></li>
+              <li class="colorlib-@yield("services-activation")"><a href="{{ route("front.services") }}">My Services</a></li>
+              <li class="colorlib-@yield("blog-activation")"><a href="{{ route("front.blog") }}">Blog</a></li>
+              <li class="colorlib-@yield("contact-activation")"><a href="{{ route("front.contact") }}">Contact</a></li>
           </ul>
       </nav>
 

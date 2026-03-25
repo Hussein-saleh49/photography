@@ -1,10 +1,11 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome');
 
-Route::prefix("front")->name(".front")->group(function () {
+Route::prefix("front")->name("front.")->group(function () {
     //=============Home page
     Route::view("index", "front.index")->name("index");
     //==============About page
@@ -21,9 +22,11 @@ Route::prefix("front")->name(".front")->group(function () {
     Route::view("contact", "front.contact")->name("contact");
 
 });
-Route::prefix("admin")->name(".admin")->group(function(){
-Route::view("index","admin.index")->name("index");
+Route::prefix("admin")->name("admin.")->group(function () {
+
+    require __DIR__ . '/adminAuth.php';
 });
+ 
 
 // Route::view('dashboard', 'dashboard')
 //     ->middleware(['auth', 'verified'])
@@ -33,4 +36,3 @@ Route::view("index","admin.index")->name("index");
 //     ->middleware(['auth'])
 //     ->name('profile');
 
-require __DIR__ . '/auth.php';

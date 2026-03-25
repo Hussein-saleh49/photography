@@ -1,4 +1,6 @@
  @extends('front.master')
+ @section("about-activation","active")
+ @section("title","About")
  @section('content')
      
          <section class="ftco-section-no-padding bg-light">

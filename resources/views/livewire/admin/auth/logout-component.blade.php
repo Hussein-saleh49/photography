@@ -1,0 +1,1 @@
+ <li><a class="dropdown-item" wire:click="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>

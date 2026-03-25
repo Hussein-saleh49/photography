@@ -1,4 +1,6 @@
 @extends('front.master')
+ @section("home-activation","active")
+@section("title","Home")
 @section('content')
     <section class="ftco-section-no-padding bg-light">
         <div class="hero-wrap">

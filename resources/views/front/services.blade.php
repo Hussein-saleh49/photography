@@ -1,6 +1,8 @@
  @extends('front.master')
+  @section("services-activation","active")
+ @section("title","Services")
  @section('content')
-     @include('front.partials.navbar')
+  <x-front.navbar title="services" subtitle="My Services"></x-front.navbar>
      <section class="ftco-section">
          <div class="container">
              <div class="row">

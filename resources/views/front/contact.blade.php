@@ -1,6 +1,9 @@
  @extends('front.master')
+  @section("contact-activation","active")
+ @section("title","Contact")
  @section('content')
-     @include('front.partials.navbar')
+     
+     <x-front.navbar title="Contact" subtitle="Contact"></x-front.navbar>
      <section class="ftco-section contact-section">
          <div class="container">
              <div class="row d-flex mb-5 contact-info">

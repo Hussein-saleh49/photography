@@ -1,6 +1,8 @@
 @extends('front.master')
+ @section("blog-activation","active")
+@section("title","Blog")
 @section('content')
-    @include('front.partials.navbar')
+    <x-front.navbar title="blog" subtitle="Read Our Blog"></x-front-navbar>
 
     <section class="ftco-section">
         <div class="container">
