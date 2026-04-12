@@ -11,7 +11,8 @@
         @include('front.partials.sidebar')
         <div id="colorlib-main">
             @yield('content')
-            @include('front.partials.footer')
+            {{-- @include('front.partials.footer') --}}
+            @livewire("front.components.footer-component")
         </div><!-- END COLORLIB-MAIN -->
     </div><!-- END COLORLIB-PAGE -->
 

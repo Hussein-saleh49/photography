@@ -31,11 +31,7 @@ Route::middleware("AdminGuest")->group(function () {
     Route::get("reset-password/{token}", ResetPassword::class)->name("reset-password");
 });
 
-Route::middleware("AdminAuth")->group(function () {
-    // 
-    Route::view("/", "admin.index")->name("index");
 
-});
 
 // Route::middleware('auth')->group(function () {
 //     Volt::route('verify-email', 'pages.auth.verify-email')

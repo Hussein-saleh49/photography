@@ -9,11 +9,12 @@
         @include('admin.partials.sidebar')
 
         <div id="layoutSidenav_content">
-          @yield("content")
-           @include("admin.partials.footer")
+            @yield('content')
+            @include('admin.partials.footer')
         </div>
     </div>
     @include('admin.partials.scripts')
+   
 </body>
 
 </html>

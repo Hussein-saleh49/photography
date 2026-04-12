@@ -7,9 +7,29 @@
                     <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                     Dashboard
                 </a>
-                <a class="nav-link" href="{{ route('admin.index') }}">
-                    <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                   products
+                <a class="nav-link" href="{{ route("admin.services.index") }}">
+                  <div class="sb-nav-link-icon"><i class="fas fa-cogs"></i></div>
+                   Services
+                </a>
+                <a class="nav-link" href="{{ route("admin.collections.index") }}">
+                      <div class="sb-nav-link-icon"><i class="fas fa-images"></i></div>
+                   Collections
+                </a>
+                <a class="nav-link" href="{{ route("admin.blogs.index") }}">
+                      <div class="sb-nav-link-icon"><i class="fas fa-newspaper"></i></div>
+                   Blogs
+                </a>
+                <a class="nav-link" href="{{ route("admin.messages.index") }}">
+                      <div class="sb-nav-link-icon"><i class="fas fa-comments"></i></div>
+                   Messages
+                </a>
+                <a class="nav-link" href="{{ route("admin.subscribers.index") }}">
+                      <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
+                   Subscribers
+                </a>
+                <a class="nav-link" href="{{ route("admin.settings.index") }}">
+                      <div class="sb-nav-link-icon"><i class="fas fa-settings"></i></div>
+                   Settings
                 </a>
             </div>
         </div>
